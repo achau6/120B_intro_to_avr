@@ -33,10 +33,32 @@ int main(void) {
 		} else if (tmpA == ((tmpA & 0xF0) | 0x01)) {
 			tmpC = 0x03;
 		} else if (tmpA == ((tmpA & 0xF0) | 0x02)) {
-                        tmpC = 0x02;
+                        tmpC = 0x03;
                 } else if (tmpA == ((tmpA & 0xF0) | 0x03)) {
-                        tmpC = 0x01;
+                        tmpC = 0x02;
                 } else if (tmpA == ((tmpA & 0xF0) | 0x04)) {
+                        tmpC = 0x03;
+		} else if (tmpA == ((tmpA & 0xF0) | 0x05)) {
+                        tmpC = 0x02;
+                } else if (tmpA == ((tmpA & 0xF0) | 0x06)) {
+                        tmpC = 0x02;
+                } else if (tmpA == ((tmpA & 0xF0) | 0x07)) {
+                        tmpC = 0x01;
+                } else if (tmpA == ((tmpA & 0xF0) | 0x08)) {
+                        tmpC = 0x03;
+		} else if (tmpA == ((tmpA & 0xF0) | 0x09)) {
+                        tmpC = 0x02;
+                } else if (tmpA == ((tmpA & 0xF0) | 0x0A)) {
+                        tmpC = 0x02;
+                } else if (tmpA == ((tmpA & 0xF0) | 0x0B)) {
+                        tmpC = 0x01;
+		} else if (tmpA == ((tmpA & 0xF0) | 0x0C)) {
+                        tmpC = 0x02;
+                } else if (tmpA == ((tmpA & 0xF0) | 0x0D)) {
+                        tmpC = 0x01;
+                } else if (tmpA == ((tmpA & 0xF0) | 0x0E)) {
+                        tmpC = 0x01;
+                } else if (tmpA == ((tmpA & 0xF0) | 0x0F)) {
                         tmpC = 0x80;
                 } else {
 			//edge case for something

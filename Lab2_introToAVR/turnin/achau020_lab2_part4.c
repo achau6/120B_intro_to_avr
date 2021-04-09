@@ -50,14 +50,14 @@ int main(void) {
 	tmpA = PINA;
 	tmpB = PINB;
 	tmpC = PINC;
-	
+	tmpD = 0x00;
 	bool overweight = false;
 	bool bigDifference = false;
 	if(Addition(Addition(tmpA, tmpB), tmpC) >= 0x8C){ //set PD0 to 1
 		overweight = true;
 	}
 	
-	if(Subtraction(tmpA, tmpC) >= 0x50){ //set PD1 to 1
+	if(Subtraction(tmpA, tmpC) >= 0x50 || Subtraction(tmpC, tmpA) >= 0x50){ //set PD1 to 1
 		bigDifference = true;
 	}	
 

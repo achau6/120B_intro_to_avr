@@ -53,7 +53,7 @@ int main(void) {
 	tmpD = 0x00;
 	bool overweight = false;
 	bool bigDifference = false;
-	if(Addition(Addition(tmpA, tmpB), tmpC) >= 0x8C){ //set PD0 to 1
+	if(Addition(Addition(tmpA, tmpB), tmpC) > 0x8C){ //set PD0 to 1
 		overweight = true;
 	}
 	
